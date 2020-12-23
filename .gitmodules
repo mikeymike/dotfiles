@@ -1,4 +1,4 @@
 [submodule "vim/vimfiles"]
   path = vim/vimfiles
-  url = https://github.com/marcel-dias/vimfiles.git
+  url = https://github.com/mikeymike/vimfiles.git
   branch = master

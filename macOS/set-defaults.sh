@@ -24,13 +24,13 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
-# Disable Resume system-wide
+# Disable Resume system-wide ????
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-# Use AirDrop over every interface. srsly this should be a default.
+# Use AirDrop over every interface. srsly this should be a default. ????
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
 
@@ -45,8 +45,8 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Enable transparency in the menu bar and elsewhere
 defaults write com.apple.UniversalAccess reduceTransparency -bool false
 
-# Always show scrollbars
-defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+# Automatic show scrollbars
+defaults write NSGlobalDomain AppleShowScrollBars -string "Automatic"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
 
 # Turn off keyboard illumination when computer is not used for 5 minutes"
@@ -95,9 +95,9 @@ sudo pmset -a hibernatemode 0
 # Screen                                                                      #
 ###############################################################################
 
-# Require password immediately after sleep or screen saver begins
+# Require password 10s after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
+defaults write com.apple.screensaver askForPasswordDelay -int 10
 
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "${HOME}/Desktop"
@@ -125,19 +125,19 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # Finder
 #
 
-# Finder: Show hidden files
-defaults write com.apple.finder AppleShowAllFiles -bool true
+# Finder: Hide hidden files
+defaults write com.apple.finder AppleShowAllFiles -bool false
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Set the Finder prefs for showing a few different volumes on the Desktop.
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 # Use list view in all Finder windows by default
-# Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
-defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+# Four-letter codes for the other view modes: `Nlsv` `icnv`, `clmv`, `glyv`
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -145,7 +145,7 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 # Set sidebar icon size to small
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
-# Finder: show status bar
+# Finder: show status bar ????
 defaults write com.apple.finder ShowStatusBar -bool true
 
 # Finder: show path bar
@@ -156,7 +156,6 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-
 
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
@@ -203,6 +202,9 @@ defaults write com.apple.dock autohide -bool true
 # Don't animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
 
+# Move Dock to the left of the screen
+defaults write com.apple.dock orientation -string left
+
 #
 # Others
 #
@@ -228,12 +230,6 @@ defaults write -g com.apple.mouse.scaling 2.5
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
-# Avoiding the creation of .DS_Store files on network volumes
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-
-# Disable the "Are you sure you want to open this application?" dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 #
 # Mac App Store
@@ -267,12 +263,6 @@ defaults write com.apple.commerce AutoUpdate -bool true
 # Dashboard, TextEdit, and Disk Utility
 #
 
-# Disable Dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
-
-# Enable Dashboard dev mode (allows keeping widgets on the desktop)
-defaults write com.apple.dashboard devmode -bool true
-
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
 # Open and save files as UTF-8 in TextEdit
@@ -292,48 +282,6 @@ defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen -bool true
 #
 defaults write com.apple.terminal "Default Window Settings" -string "terminal-ocean-dark"
 defaults write com.apple.terminal "Startup Window Settings" -string "terminal-ocean-dark"
-
-#
-# iTerm
-#
-# Don’t display the annoying prompt when quitting iTerm
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
-
-#
-# Transmission.app
-#
-
-# Set folder to store incomplete downloads
-defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents/incomplete"
-
-# Set folder to store completed downloads
-defaults write org.m0k.transmission DownloadFolder -string "${HOME}/Documents/Torrents"
-defaults write org.m0k.transmission DownloadLocationConstant -bool true
-
-# Don’t prompt for confirmation before downloading
-defaults write org.m0k.transmission DownloadAsk -bool false
-defaults write org.m0k.transmission MagnetOpenAsk -bool false
-
-# Don’t prompt for confirmation before removing non-downloading active transfers
-defaults write org.m0k.transmission CheckRemoveDownloading -bool true
-
-# Trash original torrent files
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
-
-# Hide the donate message
-defaults write org.m0k.transmission WarningDonate -bool false
-# Hide the legal disclaimer
-defaults write org.m0k.transmission WarningLegal -bool false
-
-# Randomize port on launch
-defaults write org.m0k.transmission RandomPort -bool true
-
-# IP block list.
-# Source: https://giuliomac.wordpress.com/2014/02/19/best-blocklist-for-transmission/
-defaults write org.m0k.transmission BlocklistNew -bool true
-defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
-defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
 #
 # Activity Monitor

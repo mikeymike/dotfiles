@@ -1,5 +1,6 @@
-# Marcel Dias' dotfiles
-> My own macOS preferences and configurations for ZSH, Java, Docker, Terminals and others.
+# Michael Woodwards' dotfiles
+> My own macOS preferences and configurations for ZSH, MacOS, PHP etc etc
+> Heavily inspired by [marcel-dias/dotfiles](https://github.com/marcel-dias/dotfiles)
 
 ![screenshot][scrn]
 
@@ -9,23 +10,12 @@
 
 Your dotfiles are how you personalize your system. These are mine.
 
-I was a little tired of having long alias files and everything strewn about
-(which is extremely common on other dotfiles projects, too). That led to this
-project being much more topic-centric. I realized I could split a lot of things
-up into the main areas I used (Ruby, git, system libraries, and so on), so I
-structured the project accordingly.
-
-If you're interested in the philosophy behind why projects like these are
-awesome, you might want to [read Caarlos0 post on the subject][post].
-
-[post]: http://carlosbecker.com/posts/dotfiles-are-meant-to-be-forked/
-
 ## install
 
 Run this:
 
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/marcel-dias/dotfiles/master/script/install)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/mikeymike/dotfiles/master/script/install)"
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
@@ -67,7 +57,7 @@ There's a few special files in the hierarchy.
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
 - **topic/install.sh**: Any file with this name and with exec permission, will
-ran at bootstrap phase.
+  ran at bootstrap phase.
 
 ## plugins
 
@@ -76,7 +66,6 @@ ran at bootstrap phase.
 - [more completions][zsh-completions];
 - fish-like [substring history search][zsh-history-substring-search];
 - [alias-tips][alias-tips] to remember you that you have an alias for that;
-- [jvm][jvm] to manage java versions (a la rvm, but simpler);
 
 All those are managed by [Antibody][antibody], a faster version of Antigen
 written in Go.
@@ -86,7 +75,6 @@ written in Go.
 [zsh-completions]: https://github.com/zsh-users/zsh-completions
 [zsh-history-substring-search]: https://github.com/zsh-users/zsh-history-substring-search
 [alias-tips]: https://github.com/djui/alias-tips
-[jvm]: https://github.com/caarlos0/jvm
 [antibody]: https://github.com/caarlos0/antibody
 
 ## Test it within Docker
@@ -102,6 +90,5 @@ It will start a fresh container with my dotfiles inside and dumb git credentials
 
 
 ## thanks
-I want to add my thanks to [caarlos0](http://github.com/caarlos0)
-He forked [Holmans](http://github.com/holman)' excellent
-[dotfiles](http://github.com/holman/dotfiles) and tweaked it. Also I have copied a bunch of things from other people, so, thanks everyone!
+I want to add my thanks to [marcel-dias](http://github.com/marcel-dias/)
+His dotfiles repo is most likely a better place to start than mine :smile:
