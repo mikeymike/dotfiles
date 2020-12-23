@@ -78,4 +78,4 @@ cask "suspicious-package"
 cask "webpquicklook"
 
 # MacApp Store Apps
-mas "WhatsApp", id: 1147396723
+
