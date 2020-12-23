@@ -12,10 +12,16 @@ Your dotfiles are how you personalize your system. These are mine.
 
 ## install
 
-Run this:
+MacOS Intel based:
 
 ```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/mikeymike/dotfiles/master/script/install)"
+```
+
+MacOS ARM based:
+
+```sh
+arch -x86_64 bash -c "$(curl -fsSL https://raw.githubusercontent.com/mikeymike/dotfiles/master/script/install)"
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
