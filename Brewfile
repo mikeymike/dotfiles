@@ -63,6 +63,7 @@ cask "transmission"
 cask "viscosity"
 cask "vlc"
 cask "zoomus"
+cask "plex-media-server"
 
 # https://github.com/sindresorhus/quick-look-plugins
 cask "qlcolorcode"
