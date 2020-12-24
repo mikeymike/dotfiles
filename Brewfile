@@ -34,7 +34,6 @@ brew "terraform"
 brew "terminal-notifier"
 brew "the_silver_searcher"
 brew "versent/taps/saml2aws"
-brew "vim"
 brew "wget"
 brew "zsh"
 
