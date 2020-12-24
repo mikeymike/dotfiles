@@ -1,5 +1,4 @@
 #!/bin/sh
-curl -L \
-  "https://raw.githubusercontent.com/sindresorhus/terminal-snazzy/master/Snazzy.terminal" \
-  > "/tmp/Snazzy.terminal"
-open "/tmp/Snazzy.terminal"
+cp $DOTFILES_ROOT/terminal/alacritty.yml $HOME/alacritty.yml
+
+curl https://raw.githubusercontent.com/alebelcor/alacritty-snazzy/master/snazzy.yml >> $HOME/alacritty.yml

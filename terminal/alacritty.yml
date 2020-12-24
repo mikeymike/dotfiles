@@ -1,0 +1,13 @@
+window:
+    padding:
+        x: 4
+        y: 4
+    dynamic_padding: true
+
+    decorations: none
+
+key_bindings:
+    # Left one word
+    - { key: Left,   mods: Alt,   chars: "\x1b[b" }
+    # Right one word
+    - { key: Right,   mods: Alt,   chars: "\x1b[f" }
