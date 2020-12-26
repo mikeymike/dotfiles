@@ -11,6 +11,7 @@ main() {
   export ZSH="$(pwd)"
   echo "› Updating dotfiles..."
   git pull origin master
+  git submodule update
 
   echo "› Updating Homebrew..."
   brew update
