@@ -21,10 +21,7 @@ main() {
   brew bundle
 
   # find the installers and run them iteratively
-  find . -name install.sh | grep -Ev "homebrew|build" | while read -r installer; do
-    echo "› ${installer}..."
-    sh -c "$installer" >> /tmp/dotfiles-dot
-  done
+  find . -name install.sh | xargs -I{} sh -c 'echo "Running Installer {}..." && sh -c "{}"'
 
   echo "Done all."
 }
