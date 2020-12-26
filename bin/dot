@@ -25,6 +25,8 @@ main() {
     echo "› ${installer}..."
     sh -c "$installer" >> /tmp/dotfiles-dot
   done
+
+  echo "Done all."
 }
 
 main
