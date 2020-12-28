@@ -6,8 +6,7 @@ set -e
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
 main() {
-  DOTFILES_ROOT=~/.dotfiles
-  cd $DOTFILES_ROOT
+  cd ~/.dotfiles
   # shellcheck disable=SC2155
   export ZSH="$(pwd)"
   echo "› Updating dotfiles..."
