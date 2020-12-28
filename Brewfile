@@ -37,6 +37,7 @@ brew "versent/taps/saml2aws"
 brew "wget"
 brew "zsh"
 brew "z"
+brew "php"
 
 # gnu stuff
 brew "coreutils"
