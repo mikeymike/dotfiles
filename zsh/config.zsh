@@ -51,6 +51,9 @@ if [[ ! -z "$+terminfo[smkx]" ]] && [[ ! -z "$+terminfo[rmkx]" ]]; then
   zle -N zle-line-finish
 fi
 
+# Use emacs key bindings
+bindkey -e
+
 # [Ctrl-r] - Search backward incrementally for a specified string.
 # The string may begin with ^ to anchor the search to the beginning of the line.
 bindkey '^r' history-incremental-search-backward
