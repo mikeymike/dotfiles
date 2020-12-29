@@ -64,6 +64,8 @@ cask "viscosity"
 cask "vlc"
 cask "zoomus"
 cask "plex-media-server"
+cask "microsoft-teams"
+cask "whatsapp"
 
 # https://github.com/sindresorhus/quick-look-plugins
 cask "qlcolorcode"
