@@ -67,6 +67,7 @@ cask "plex-media-server"
 cask "microsoft-teams"
 cask "whatsapp"
 cask "obs"
+cask "kap"
 
 # https://github.com/sindresorhus/quick-look-plugins
 cask "qlcolorcode"
