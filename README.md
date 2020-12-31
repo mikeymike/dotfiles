@@ -4,7 +4,7 @@
 
 ![screenshot][scrn]
 
-[scrn]: https://raw.githubusercontent.com/marceldiass/dotfiles/master/screenshot.png
+[scrn]: https://raw.githubusercontent.com/mikeymike/dotfiles/master/screenshot.png
 
 ## dotfiles
 
