@@ -1,7 +1,6 @@
 #!/bin/zsh
-# shortcut to this dotfiles path is $DOTFILES
-export DOTFILES="$HOME/.dotfiles"
-export ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-ohmyzsh-SLASH-ohmyzsh"
+# shortcut to this dotfiles path is $ZSH
+export ZSH="$HOME/.dotfiles"
 
 # your project folder that we can `c [tab]` to
 export PROJECTS="$HOME/Projects"
@@ -11,7 +10,7 @@ export EDITOR='vim'
 
 # all of our zsh files
 typeset -U config_files
-config_files=($DOTFILES/*/*.zsh)
+config_files=($ZSH/*/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}; do

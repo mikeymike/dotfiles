@@ -1,2 +1,2 @@
 #compdef d
-_files -W $DOTFILES -/
+_files -W $ZSH -/
