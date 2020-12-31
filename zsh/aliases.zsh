@@ -1,6 +1,6 @@
 #!/bin/sh
 __reload_dotfiles() {
-  PATH="$(command -p getconf PATH):/usr/local/bin"
+  PATH="$(command -p getconf PATH)"
   . ~/.zshrc
   cd .
 }
