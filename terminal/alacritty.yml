@@ -9,3 +9,4 @@ window:
 key_bindings:
     - { key: Left,     mods: Alt,     chars: "\x1bb" }
     - { key: Right,    mods: Alt,     chars: "\x1bf" }
+    - { key: Key3,     mods: Alt,     chars: "#" }
