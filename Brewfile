@@ -38,6 +38,9 @@ brew "wget"
 brew "zsh"
 brew "z"
 brew "php"
+brew "php@7.2"
+brew "php@7.3"
+brew "php@7.4"
 
 # gnu stuff
 brew "coreutils"
