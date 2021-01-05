@@ -42,7 +42,6 @@ brew "php@7.2"
 brew "php@7.3"
 brew "php@7.4"
 brew "svn"
-brew "bear"
 
 # gnu stuff
 brew "coreutils"
