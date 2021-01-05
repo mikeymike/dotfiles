@@ -42,6 +42,7 @@ brew "php@7.2"
 brew "php@7.3"
 brew "php@7.4"
 brew "svn"
+brew "lastpass-cli"
 
 # gnu stuff
 brew "coreutils"
@@ -87,4 +88,4 @@ cask "suspicious-package"
 cask "webpquicklook"
 
 # MacApp Store Apps
-
+mas install 1091189122
