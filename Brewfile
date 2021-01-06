@@ -43,6 +43,7 @@ brew "php@7.3"
 brew "php@7.4"
 brew "svn"
 brew "lastpass-cli"
+brew "tmux"
 
 # gnu stuff
 brew "coreutils"
