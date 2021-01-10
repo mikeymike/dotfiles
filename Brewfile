@@ -87,6 +87,3 @@ cask "quicklook-csv"
 cask "quicklook-json"
 cask "suspicious-package"
 cask "webpquicklook"
-
-# MacApp Store Apps
-mas install 1091189122
