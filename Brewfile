@@ -87,3 +87,6 @@ cask "quicklook-csv"
 cask "quicklook-json"
 cask "suspicious-package"
 cask "webpquicklook"
+
+# MacApp Store Apps
+mas "Bear", id: 1091189122
