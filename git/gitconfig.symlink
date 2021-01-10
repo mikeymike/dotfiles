@@ -1,10 +1,10 @@
 # Sample gitconfig
 #
 # You probably want to change the [user] section here since you are not me.
-[user]
-    name = AUTHORNAME
-    email = AUTHOREMAIL
-    helper = GIT_CREDENTIAL_HELPER
+[includeIf "gitdir:~/Projects/"]
+  	path = .gitconfig-personal
+[includeIf "gitdir:~/Sites/"]
+  	path = .gitconfig-work
 [color]
     diff    = auto
     status  = auto
