@@ -55,7 +55,6 @@ brew "gnutls"
 brew "gnu-indent"
 brew "gnu-getopt"
 
-cask "docker"
 cask "font-hack"
 cask "font-jetbrains-mono"
 cask "google-backup-and-sync"
