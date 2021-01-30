@@ -74,6 +74,7 @@ cask "whatsapp"
 cask "obs"
 cask "kap"
 cask "microsoft-outlook"
+cask "android-file-transfer"
 
 # https://github.com/sindresorhus/quick-look-plugins
 cask "qlcolorcode"
