@@ -75,6 +75,7 @@ cask "obs"
 cask "kap"
 cask "microsoft-outlook"
 cask "android-file-transfer"
+cask "jetbrains-toolbox"
 
 # https://github.com/sindresorhus/quick-look-plugins
 cask "qlcolorcode"
