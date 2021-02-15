@@ -4,4 +4,5 @@ __reload_dotfiles() {
   . ~/.zshrc
   cd .
 }
-alias reload!='__reload_dotfiles'
+alias reload='__reload_dotfiles'
+alias main='tmux -ADs main'
