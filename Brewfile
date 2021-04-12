@@ -27,8 +27,6 @@ brew "jq"
 brew "mas"
 brew "mkcert"
 brew "node"
-brew "oath-toolkit"
-brew "pinentry-mac"
 brew "shellcheck"
 brew "telnet"
 brew "terraform"
@@ -78,18 +76,6 @@ cask "kap"
 cask "microsoft-outlook"
 cask "android-file-transfer"
 cask "jetbrains-toolbox"
-
-# https://github.com/sindresorhus/quick-look-plugins
-cask "qlcolorcode"
-cask "qlimagesize"
-cask "qlvideo"
-cask "qlmarkdown"
-cask "qlprettypatch"
-cask "qlstephen"
-cask "quicklook-csv"
-cask "quicklook-json"
-cask "suspicious-package"
-cask "webpquicklook"
 
 # MacApp Store Apps
 mas "Bear", id: 1091189122
