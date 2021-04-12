@@ -76,6 +76,7 @@ cask "kap"
 cask "microsoft-outlook"
 cask "android-file-transfer"
 cask "jetbrains-toolbox"
+cask "rectangle"
 
 # MacApp Store Apps
 mas "Bear", id: 1091189122
