@@ -45,6 +45,7 @@ brew "php@7.4"
 brew "svn"
 brew "lastpass-cli"
 brew "tmux"
+brew "navi"
 
 # gnu stuff
 brew "coreutils"
