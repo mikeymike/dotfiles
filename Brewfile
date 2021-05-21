@@ -44,6 +44,9 @@ brew "svn"
 brew "lastpass-cli"
 brew "tmux"
 brew "navi"
+brew "gcc"
+brew "nvm"
+brew "rustup-init"
 
 # gnu stuff
 brew "coreutils"
