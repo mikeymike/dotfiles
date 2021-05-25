@@ -47,6 +47,7 @@ brew "navi"
 brew "gcc"
 brew "nvm"
 brew "rustup-init"
+brew "bison"
 
 # gnu stuff
 brew "coreutils"
