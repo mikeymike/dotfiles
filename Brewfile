@@ -49,6 +49,7 @@ brew "gcc"
 brew "nvm"
 brew "rustup-init"
 brew "bison"
+brew "re2c"
 
 # gnu stuff
 brew "coreutils"
