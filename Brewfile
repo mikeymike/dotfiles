@@ -50,6 +50,7 @@ brew "nvm"
 brew "rustup-init"
 brew "bison"
 brew "re2c"
+brew "libiconv"
 
 # gnu stuff
 brew "coreutils"
