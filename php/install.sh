@@ -2,8 +2,10 @@
 
 if pecl list | grep -q xdebug; then
     pecl upgrade xdebug
+    /opt/homebrew/opt/php@7.4/bin/pecl upgrade xdebug
 else
     pecl install xdebug
+    /opt/homebrew/opt/php@7.4/bin/pecl upgrade xdebug
 fi;
 
 if which composer > /dev/null; then
