@@ -51,6 +51,7 @@ brew "rustup-init"
 brew "bison"
 brew "re2c"
 brew "libiconv"
+brew "android-platform-tools"
 
 # gnu stuff
 brew "coreutils"
