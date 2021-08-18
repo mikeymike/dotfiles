@@ -52,6 +52,7 @@ brew "bison"
 brew "re2c"
 brew "libiconv"
 brew "android-platform-tools"
+brew "dive"
 
 # gnu stuff
 brew "coreutils"
