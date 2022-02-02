@@ -51,7 +51,6 @@ brew "rustup-init"
 brew "bison"
 brew "re2c"
 brew "libiconv"
-brew "android-platform-tools"
 brew "dive"
 
 # gnu stuff
@@ -84,6 +83,7 @@ cask "obs"
 cask "kap"
 cask "microsoft-outlook"
 cask "android-file-transfer"
+cask "android-platform-tools"
 cask "jetbrains-toolbox"
 cask "rectangle"
 
