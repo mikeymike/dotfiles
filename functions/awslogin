@@ -1,0 +1,15 @@
+#!/bin/sh
+awslogin() {
+    token=$1
+    mfa_serial=$(aws configure get mfa_serial --profile personal)
+    output=$(aws --profile personal sts get-session-token --serial-number "${mfa_serial}" --token-code "${token}")
+
+    aws_access_key=$(echo $output | jq .Credentials.AccessKeyId  | tr -d '"')
+    aws_secret_access_key=$(echo $output | jq .Credentials.SecretAccessKey  | tr -d '"')
+    aws_session_token=$(echo $output | jq .Credentials.SessionToken  | tr -d '"')
+
+    aws configure set aws_access_key_id "$aws_access_key" --profile personal-mfa
+    aws configure set aws_secret_access_key "$aws_secret_access_key" --profile personal-mfa
+    aws configure set aws_session_token "$aws_session_token" --profile personal-mfa
+    aws configure set region "eu-west-1" --profile personal-mfa
+}
