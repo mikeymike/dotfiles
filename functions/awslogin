@@ -12,4 +12,6 @@ awslogin() {
     aws configure set aws_secret_access_key "$aws_secret_access_key" --profile personal-mfa
     aws configure set aws_session_token "$aws_session_token" --profile personal-mfa
     aws configure set region "eu-west-1" --profile personal-mfa
+
+    export AWS_PROFILE=personal-mfa
 }
