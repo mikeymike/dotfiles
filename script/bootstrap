@@ -170,6 +170,11 @@ setup_zsh() {
   success "set $("$zsh" --version) at $zsh as default shell"
 }
 
+if ! [ -f ~/.bin ]
+then
+    mkdir ~/.bin
+fi
+
 setup_gitconfig
 link_dotfiles
 setup_zsh
