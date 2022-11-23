@@ -1,9 +1,9 @@
 # Sample gitconfig
 #
 # You probably want to change the [user] section here since you are not me.
-[includeIf "gitdir:~/Projects/"]
+[includeIf "gitdir:~/Personal/"]
   	path = .gitconfig-personal
-[includeIf "gitdir:~/Sites/"]
+[includeIf "gitdir:~/Work/"]
   	path = .gitconfig-work
 [color]
     diff    = auto
