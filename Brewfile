@@ -81,4 +81,6 @@ cask "kap"
 # cask "android-platform-tools"
 cask "jetbrains-toolbox"
 cask "rectangle"
+cask "itsycal"
+cask "postman"
 
