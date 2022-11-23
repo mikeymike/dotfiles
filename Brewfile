@@ -83,4 +83,5 @@ cask "jetbrains-toolbox"
 cask "rectangle"
 cask "itsycal"
 cask "postman"
+cask "boop"
 
