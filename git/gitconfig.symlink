@@ -2,9 +2,11 @@
 #
 # You probably want to change the [user] section here since you are not me.
 [includeIf "gitdir:~/Personal/"]
-  	path = .gitconfig-personal
+    path = .gitconfig-personal
 [includeIf "gitdir:~/Work/"]
-  	path = .gitconfig-work
+    path = .gitconfig-work
+[includeIf "gitdir:~/.dotfiles/"]
+    path = .gitconfig-personal
 [color]
     diff    = auto
     status  = auto
@@ -49,4 +51,6 @@
     log = diff-so-fancy | less --tabs=4 -RFX
     show = diff-so-fancy | less --tabs=4 -RFX
 [pull]
-	ff = only
+    ff = only
+[url "git@github.com:"]
+    insteadOf = https://github.com/
